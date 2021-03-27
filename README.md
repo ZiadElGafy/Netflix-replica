@@ -1,6 +1,6 @@
-# ninja_id
+# movie_app
 
-A new Flutter application.
+A makeshift movie application.
 
 ## Getting Started
 
