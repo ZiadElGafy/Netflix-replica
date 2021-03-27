@@ -22,8 +22,6 @@ Map sonic = {
   'rottenrating': '6.3',
   'match': '91%',
   'releaseYear': '2019',
-  'color': Color.fromRGBO(0, 0, 255, 0.16),
-  'appBarColor': Color.fromRGBO(0, 0, 255, 0.2),
   'titleFontSize': 25.0,
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/01/sonic_the_hedgehog_poster3_thumb.jpg",
@@ -38,8 +36,6 @@ var starWars = {
   'rottenrating': '9.4',
   'match': '94%',
   'releaseYear': '1997',
-  'color': Color.fromRGBO(200, 0, 255, 0.15),
-  'appBarColor': Color.fromRGBO(200, 0, 255, 0.1),
   'titleFontSize': 25.0,
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2019/08/star-wars-rise-of-skywalker-poster-2_thumb.jpg",
@@ -54,8 +50,6 @@ var onward = {
   'rottenrating': '6.1',
   'match': '83%',
   'releaseYear': '2019',
-  'color': Color.fromRGBO(200, 0, 255, 0.15),
-  'appBarColor': Color.fromRGBO(200, 0, 255, 0.2),
   'titleFontSize': 25.0,
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2019/05/onward_xlga_thumb.jpg",
@@ -70,9 +64,7 @@ var noTimeToDie = {
   'rottenrating': '7.4',
   'match': '71%',
   'releaseYear': '2020',
-  'color': Color.fromRGBO(200, 200, 200, 0.35),
-  'appBarColor': Color.fromRGBO(200, 200, 200, 0.3),
-  'titleFontSize': 25.0,
+  'titleFontSize': 23.0,
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/09/No-Time-to-Die-November-poster_thumb.jpg",
 };
@@ -86,8 +78,6 @@ var avengers = {
   'rottenrating': '9.3',
   'match': '95%',
   'releaseYear': '2019',
-  'color': Color.fromRGBO(80, 10, 255, 0.15),
-  'appBarColor': Color.fromRGBO(80, 10, 255, 0.1),
   'titleFontSize': 25.0,
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2019/04/avengers_endgame_ver44_xlg_thumb.jpg",
@@ -102,9 +92,7 @@ var aladdin = {
   'rottenrating': '7.7',
   'match': '81%',
   'releaseYear': '2019',
-  'color': Color.fromRGBO(220, 10, 255, 0.2),
-  'appBarColor': Color.fromRGBO(220, 10, 255, 0.15),
-  'titleFontSize': 25.0,
+  'titleFontSize': 24.0,
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2019/03/aladdin-poster-2019_thumb.jpg",
 };
@@ -118,8 +106,6 @@ var creed = {
   'rottenrating': '5.9',
   'match': '74%',
   'releaseYear': '2015',
-  'color': Color.fromRGBO(200, 200, 200, 0.55),
-  'appBarColor': Color.fromRGBO(200, 200, 200, 0.4),
   'titleFontSize': 25.0,
   'link':
       "https://www.joblo.com/assets/images/oldsite/posters/images/full/creed21200poster_thumb.jpg",
@@ -134,9 +120,7 @@ var theKid = {
   'rottenrating': '5.6',
   'match': '78%',
   'releaseYear': '2019',
-  'color': Color.fromRGBO(10, 0, 200, 0.12),
-  'appBarColor': Color.fromRGBO(10, 0, 200, 0.07),
-  'titleFontSize': 25.0,
+  'titleFontSize': 19.0,
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2018/10/The-Kid-Who-Would-Be-King-poster-1a_thumb.jpg",
 };
@@ -150,9 +134,7 @@ var searching = {
   'rottenrating': '7.9',
   'match': '69%',
   'releaseYear': '2018',
-  'color': Color.fromRGBO(0, 0, 255, 0.16),
-  'appBarColor': Color.fromRGBO(0, 0, 255, 0.2),
-  'titleFontSize': 25.0,
+  'titleFontSize': 24.0,
   'link':
       "https://www.joblo.com/assets/images/oldsite/posters/images/full/Searching-poster-1_thumb.jpg",
 };
@@ -166,9 +148,7 @@ var ralph = {
   'rottenrating': '8.6',
   'match': '88%',
   'releaseYear': '2012',
-  'color': Color.fromRGBO(0, 0, 255, 0.16),
-  'appBarColor': Color.fromRGBO(0, 0, 255, 0.2),
-  'titleFontSize': 25.0,
+  'titleFontSize': 23.0,
   'link':
       "https://www.joblo.com/assets/images/oldsite/posters/images/full/ralph2-main-poster-xl_thumb.jpg",
 };
@@ -182,9 +162,7 @@ var bohemianRhapsody = {
   'rottenrating': '9.2',
   'match': '80%',
   'releaseYear': '2018',
-  'color': Color.fromRGBO(0, 0, 255, 0.16),
-  'appBarColor': Color.fromRGBO(0, 0, 255, 0.2),
-  'titleFontSize': 25.0,
+  'titleFontSize': 23.0,
   'link':
       "https://www.joblo.com/assets/images/oldsite/posters/images/full/bohemian_rhapsody_poster-xl_thumb.jpg",
 };
@@ -198,8 +176,6 @@ var incredibles = {
   'rottenrating': '8.4',
   'match': '93%',
   'releaseYear': '2018',
-  'color': Color.fromRGBO(0, 0, 255, 0.16),
-  'appBarColor': Color.fromRGBO(0, 0, 255, 0.2),
   'titleFontSize': 25.0,
   'link':
       "https://www.joblo.com/assets/images/oldsite/posters/images/full/incredibles-2-poster_thumb.jpg",
@@ -214,8 +190,6 @@ var doctorSleep = {
   'rottenrating': '5.7',
   'match': '67%',
   'releaseYear': '2019',
-  'color': Color.fromRGBO(0, 0, 255, 0.16),
-  'appBarColor': Color.fromRGBO(0, 0, 255, 0.2),
   'titleFontSize': 25.0,
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2019/10/Doctor-Sleep-poster-2_thumb.jpg",
@@ -230,8 +204,6 @@ var tenet = {
   'rottenrating': '9.0',
   'match': '79%',
   'releaseYear': '2020',
-  'color': Color.fromRGBO(0, 0, 255, 0.16),
-  'appBarColor': Color.fromRGBO(0, 0, 255, 0.2),
   'titleFontSize': 25.0,
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/07/tenetposterinter_thumb.jpg",
@@ -246,9 +218,7 @@ var radioactive = {
   'rottenrating': '7.2',
   'match': '84%',
   'releaseYear': '2019',
-  'color': Color.fromRGBO(0, 0, 255, 0.16),
-  'appBarColor': Color.fromRGBO(0, 0, 255, 0.2),
-  'titleFontSize': 25.0,
+  'titleFontSize': 24.0,
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/07/radioactive-poster_thumb.jpg",
 };
@@ -262,8 +232,6 @@ var blackWidow = {
   'rottenrating': '8.4',
   'match': '82%',
   'releaseYear': '2021',
-  'color': Color.fromRGBO(0, 0, 255, 0.16),
-  'appBarColor': Color.fromRGBO(0, 0, 255, 0.2),
   'titleFontSize': 25.0,
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/03/2EF9FAE7-B888-4DBA-868D-B4E289BAE769_thumb.jpeg",
@@ -278,8 +246,6 @@ var greyHound = {
   'rottenrating': '7.2',
   'match': '70%',
   'releaseYear': '2020',
-  'color': Color.fromRGBO(0, 0, 255, 0.16),
-  'appBarColor': Color.fromRGBO(0, 0, 255, 0.2),
   'titleFontSize': 25.0,
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/03/greyhoundposter_thumb.jpg",
@@ -294,9 +260,7 @@ var fast9 = {
   'rottenrating': '8.6',
   'match': '82%',
   'releaseYear': '2021',
-  'color': Color.fromRGBO(0, 0, 255, 0.16),
-  'appBarColor': Color.fromRGBO(0, 0, 255, 0.2),
-  'titleFontSize': 25.0,
+  'titleFontSize': 23.0,
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/01/Fast--Furious-9-Han-poster_thumb.jpg",
 };
@@ -310,9 +274,7 @@ var earthquake = {
   'rottenrating': '8.3',
   'match': '71%',
   'releaseYear': '2016',
-  'color': Color.fromRGBO(0, 0, 255, 0.16),
-  'appBarColor': Color.fromRGBO(0, 0, 255, 0.2),
-  'titleFontSize': 25.0,
+  'titleFontSize': 23.0,
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2019/10/earthbirdpostera_thumb.jpg",
 };

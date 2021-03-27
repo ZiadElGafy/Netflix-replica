@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'carrosellTile.dart';
 import 'main.dart';
@@ -9,6 +10,9 @@ import 'MorePage.dart';
 class MoviePage extends StatefulWidget {
   final Map mp;
   MoviePage(this.mp);
+
+  final mainColor = Colors.transparent;
+  final appBarColor = Color.fromRGBO(100, 100, 100, 0.03);
 
   @override
   _MoviePageState createState() => _MoviePageState();
@@ -79,13 +83,13 @@ class _MoviePageState extends State<MoviePage> {
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: MediaQuery.of(context).size.height * 1.0 / 13.8,
-        backgroundColor: Color.fromRGBO(10, 0, 50, 0.2),
+        backgroundColor: widget.appBarColor,
         centerTitle: true,
         title: Text(
           widget.mp['displayName'],
           style: TextStyle(
             color: Colors.white,
-            fontSize: widget.mp['titleFontSize'],
+            fontSize: 23,
             fontFamily: 'Poppins',
             letterSpacing: 0.0,
           ),
@@ -95,7 +99,7 @@ class _MoviePageState extends State<MoviePage> {
       body: SingleChildScrollView(
         child: Column(children: [
           Container(
-              color: Color.fromRGBO(10, 0, 50, 0.25),
+              color: widget.mainColor,
               child: Column(
                 children: [
                   Center(
@@ -265,7 +269,7 @@ class _MoviePageState extends State<MoviePage> {
               Row(
                 children: [
                   Container(
-                    color: widget.mp['color'],
+                    color: widget.mainColor,
                     width: MediaQuery.of(context).size.width * 5 / 10,
                     height: MediaQuery.of(context).size.height / 4.0,
                     child: Column(
@@ -401,7 +405,7 @@ class _MoviePageState extends State<MoviePage> {
                     ),
                   ),
                   Container(
-                    color: widget.mp['color'],
+                    color: widget.mainColor,
                     width: MediaQuery.of(context).size.width * 5 / 10,
                     height: MediaQuery.of(context).size.height / 4.0,
                     child: Column(
