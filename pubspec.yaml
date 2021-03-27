@@ -1,5 +1,5 @@
-name: ninja_id
-description: A new Flutter application.
+name: movie_app
+description:A makeshift movie application.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
