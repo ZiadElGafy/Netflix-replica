@@ -43,6 +43,7 @@ class _MoviePageState extends State<MoviePage> {
         );
       }
       if (index == 3) {
+        renderFavorites();
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => FavoritesPage()),
@@ -89,7 +90,7 @@ class _MoviePageState extends State<MoviePage> {
           widget.mp['displayName'],
           style: TextStyle(
             color: Colors.white,
-            fontSize: 23,
+            fontSize: widget.mp['titleFontSize'],
             fontFamily: 'Poppins',
             letterSpacing: 0.0,
           ),

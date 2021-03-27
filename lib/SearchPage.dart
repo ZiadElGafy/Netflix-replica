@@ -36,6 +36,7 @@ class _SearchPageState extends State<SearchPage> {
         );
       }
       if (index == 3) {
+        renderFavorites();
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => FavoritesPage()),

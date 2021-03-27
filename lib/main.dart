@@ -278,6 +278,38 @@ var earthquake = {
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2019/10/earthbirdpostera_thumb.jpg",
 };
+List<Map> database = [
+  sonic,
+  starWars,
+  noTimeToDie,
+  greyHound,
+  onward,
+  incredibles,
+  radioactive,
+  searching,
+  doctorSleep,
+  creed,
+  aladdin,
+  ralph,
+  avengers,
+  theKid,
+  tenet,
+  blackWidow,
+  bohemianRhapsody,
+  fast9,
+  earthquake
+];
+
+//RENDERING FAVORITES FOR FAVORITES PAGE
+List<Map> favs = [];
+void renderFavorites() {
+  favs = [];
+  for (int i = 0; i < database.length; i++) {
+    if (database[i]['isFav'] == true) {
+      favs.add(database[i]);
+    }
+  }
+}
 
 class MovieApp extends StatelessWidget {
   @override
@@ -293,13 +325,12 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   //MAIN POSTER LIKE BUTTON
-  bool isFavorited = false;
   void toggleFavorite() {
     setState(() {
-      if (isFavorited == true) {
-        isFavorited = false;
+      if (earthquake['isFav'] == true) {
+        earthquake['isFav'] = false;
       } else {
-        isFavorited = true;
+        earthquake['isFav'] = true;
       }
     });
   }
@@ -328,6 +359,7 @@ class _HomePageState extends State<HomePage> {
         );
       }
       if (index == 3) {
+        renderFavorites();
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => FavoritesPage()),
@@ -675,7 +707,7 @@ class _HomePageState extends State<HomePage> {
                             ),
                             Container(
                               child: IconButton(
-                                icon: (isFavorited
+                                icon: (earthquake['isFav']
                                     ? Icon(Icons.favorite,
                                         color: Color.fromRGBO(255, 30, 30, 1),
                                         size: 35)
@@ -684,7 +716,7 @@ class _HomePageState extends State<HomePage> {
                                             Color.fromRGBO(128, 128, 128, 0.6),
                                         size: 35)),
                                 onPressed: () {
-                                  if (isFavorited) {
+                                  if (earthquake['isFav']) {
                                     ScaffoldMessenger.of(context)
                                         .showSnackBar(SnackBar(
                                       backgroundColor:
