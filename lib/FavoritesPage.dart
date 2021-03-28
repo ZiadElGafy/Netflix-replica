@@ -3,6 +3,7 @@ import 'SearchPage.dart';
 import 'DiscoverPage.dart';
 import 'main.dart';
 import 'MorePage.dart';
+import 'ListViewTile.dart';
 
 class FavoritesPage extends StatefulWidget {
   @override
@@ -10,6 +11,16 @@ class FavoritesPage extends StatefulWidget {
 }
 
 class _FavoritesPageState extends State<FavoritesPage> {
+//RENDERING FAVORITES FOR FAVORITES PAGE
+  void renderFavorites() {
+    favs = [];
+    for (int i = 0; i < database.length; i++) {
+      if (database[i]['isFav'] == true) {
+        favs.add(listViewTile(context, database[i]));
+      }
+    }
+  }
+
   //BOTTOM NAV BAR SELECTION
   int selectedIndex = 3;
   void indexSelected(int index) {
@@ -67,22 +78,39 @@ class _FavoritesPageState extends State<FavoritesPage> {
       body: favs.length == 0
           ? Container(
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height * 2.1 / 10,
+                  ),
                   Container(
-                    width: MediaQuery.of(context).size.width / 5,
-                    height: MediaQuery.of(context).size.height / 5,
-                    child: Image.asset('noFavorites.png'),
+                    width: MediaQuery.of(context).size.width / 1.6,
+                    child: Image.asset('assets/noFavorites.png'),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height * 0.17 / 10,
+                  ),
+                  Text(
+                    "No Movies Found",
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 21,
+                      color: Colors.white,
+                    ),
                   ),
                 ],
               ),
             )
           : Container(
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height,
-              color: Colors.white),
+              color: Colors.transparent,
+              child: SingleChildScrollView(
+                child: Column(
+                  children: favs,
+                ),
+              ),
+            ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.amber[800],
         unselectedItemColor: Colors.white,

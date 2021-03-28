@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'carrosellTile.dart';
 import 'MoviePage.dart';
 import 'SearchPage.dart';
 import 'main.dart';
 import 'FavoritesPage.dart';
 import 'MorePage.dart';
+import 'ListViewTile.dart';
 
 class DiscoverPage extends StatefulWidget {
   @override
@@ -12,6 +12,16 @@ class DiscoverPage extends StatefulWidget {
 }
 
 class _DiscoverPageState extends State<DiscoverPage> {
+//RENDERING FAVORITES FOR FAVORITES PAGE
+  void renderFavorites() {
+    favs = [];
+    for (int i = 0; i < database.length; i++) {
+      if (database[i]['isFav'] == true) {
+        favs.add(listViewTile(context, database[i]));
+      }
+    }
+  }
+
   //BOTTOM NAV BAR SELECTION
   int selectedIndex = 2;
   void indexSelected(int index) {

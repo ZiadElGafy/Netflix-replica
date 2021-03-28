@@ -6,6 +6,8 @@ import 'SearchPage.dart';
 import 'DiscoverPage.dart';
 import 'FavoritesPage.dart';
 import 'MorePage.dart';
+import 'ListViewTile.dart';
+import 'package:intl/intl.dart';
 
 void main() {
   runApp(MovieApp());
@@ -23,6 +25,8 @@ Map sonic = {
   'match': '91%',
   'releaseYear': '2019',
   'titleFontSize': 25.0,
+  'played': false,
+  'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/01/sonic_the_hedgehog_poster3_thumb.jpg",
 };
@@ -37,6 +41,8 @@ var starWars = {
   'match': '94%',
   'releaseYear': '1997',
   'titleFontSize': 25.0,
+  'played': false,
+  'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2019/08/star-wars-rise-of-skywalker-poster-2_thumb.jpg",
 };
@@ -51,6 +57,8 @@ var onward = {
   'match': '83%',
   'releaseYear': '2019',
   'titleFontSize': 25.0,
+  'played': false,
+  'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2019/05/onward_xlga_thumb.jpg",
 };
@@ -65,6 +73,8 @@ var noTimeToDie = {
   'match': '71%',
   'releaseYear': '2020',
   'titleFontSize': 23.0,
+  'played': false,
+  'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/09/No-Time-to-Die-November-poster_thumb.jpg",
 };
@@ -79,6 +89,8 @@ var avengers = {
   'match': '95%',
   'releaseYear': '2019',
   'titleFontSize': 25.0,
+  'played': false,
+  'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2019/04/avengers_endgame_ver44_xlg_thumb.jpg",
 };
@@ -93,6 +105,8 @@ var aladdin = {
   'match': '81%',
   'releaseYear': '2019',
   'titleFontSize': 24.0,
+  'played': false,
+  'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2019/03/aladdin-poster-2019_thumb.jpg",
 };
@@ -107,6 +121,8 @@ var creed = {
   'match': '74%',
   'releaseYear': '2015',
   'titleFontSize': 25.0,
+  'played': false,
+  'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/oldsite/posters/images/full/creed21200poster_thumb.jpg",
 };
@@ -121,6 +137,8 @@ var theKid = {
   'match': '78%',
   'releaseYear': '2019',
   'titleFontSize': 19.0,
+  'played': false,
+  'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2018/10/The-Kid-Who-Would-Be-King-poster-1a_thumb.jpg",
 };
@@ -135,6 +153,8 @@ var searching = {
   'match': '69%',
   'releaseYear': '2018',
   'titleFontSize': 24.0,
+  'played': false,
+  'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/oldsite/posters/images/full/Searching-poster-1_thumb.jpg",
 };
@@ -149,6 +169,8 @@ var ralph = {
   'match': '88%',
   'releaseYear': '2012',
   'titleFontSize': 23.0,
+  'played': false,
+  'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/oldsite/posters/images/full/ralph2-main-poster-xl_thumb.jpg",
 };
@@ -163,6 +185,8 @@ var bohemianRhapsody = {
   'match': '80%',
   'releaseYear': '2018',
   'titleFontSize': 23.0,
+  'played': false,
+  'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/oldsite/posters/images/full/bohemian_rhapsody_poster-xl_thumb.jpg",
 };
@@ -177,6 +201,8 @@ var incredibles = {
   'match': '93%',
   'releaseYear': '2018',
   'titleFontSize': 25.0,
+  'played': false,
+  'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/oldsite/posters/images/full/incredibles-2-poster_thumb.jpg",
 };
@@ -191,6 +217,8 @@ var doctorSleep = {
   'match': '67%',
   'releaseYear': '2019',
   'titleFontSize': 25.0,
+  'played': false,
+  'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2019/10/Doctor-Sleep-poster-2_thumb.jpg",
 };
@@ -205,6 +233,8 @@ var tenet = {
   'match': '79%',
   'releaseYear': '2020',
   'titleFontSize': 25.0,
+  'played': false,
+  'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/07/tenetposterinter_thumb.jpg",
 };
@@ -219,6 +249,8 @@ var radioactive = {
   'match': '84%',
   'releaseYear': '2019',
   'titleFontSize': 24.0,
+  'played': false,
+  'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/07/radioactive-poster_thumb.jpg",
 };
@@ -233,6 +265,8 @@ var blackWidow = {
   'match': '82%',
   'releaseYear': '2021',
   'titleFontSize': 25.0,
+  'played': false,
+  'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/03/2EF9FAE7-B888-4DBA-868D-B4E289BAE769_thumb.jpeg",
 };
@@ -247,6 +281,8 @@ var greyHound = {
   'match': '70%',
   'releaseYear': '2020',
   'titleFontSize': 25.0,
+  'played': false,
+  'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/03/greyhoundposter_thumb.jpg",
 };
@@ -261,6 +297,8 @@ var fast9 = {
   'match': '82%',
   'releaseYear': '2021',
   'titleFontSize': 23.0,
+  'played': false,
+  'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/01/Fast--Furious-9-Han-poster_thumb.jpg",
 };
@@ -275,6 +313,8 @@ var earthquake = {
   'match': '71%',
   'releaseYear': '2016',
   'titleFontSize': 23.0,
+  'played': false,
+  'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2019/10/earthbirdpostera_thumb.jpg",
 };
@@ -300,16 +340,7 @@ List<Map> database = [
   earthquake
 ];
 
-//RENDERING FAVORITES FOR FAVORITES PAGE
-List<Map> favs = [];
-void renderFavorites() {
-  favs = [];
-  for (int i = 0; i < database.length; i++) {
-    if (database[i]['isFav'] == true) {
-      favs.add(database[i]);
-    }
-  }
-}
+List<Widget> favs = [];
 
 class MovieApp extends StatelessWidget {
   @override
@@ -332,6 +363,26 @@ class _HomePageState extends State<HomePage> {
       } else {
         earthquake['isFav'] = true;
       }
+    });
+  }
+
+  //RENDERING FAVORITES FOR FAVORITES PAGE
+  void renderFavorites() {
+    favs = [];
+    for (int i = 0; i < database.length; i++) {
+      if (database[i]['isFav'] == true) {
+        favs.add(listViewTile(context, database[i]));
+      }
+    }
+  }
+
+  //PLAY BUTTON PRESS
+  void playButtonPress() {
+    setState(() {
+      earthquake['played'] = true;
+      DateTime now = DateTime.now();
+      DateFormat formatter = DateFormat('MM-dd-yyyy');
+      earthquake['playedDate'] = formatter.format(now);
     });
   }
 
@@ -681,7 +732,7 @@ class _HomePageState extends State<HomePage> {
                               width: MediaQuery.of(context).size.width / 3.05,
                               height: MediaQuery.of(context).size.height / 18,
                               child: RaisedButton(
-                                onPressed: () {},
+                                onPressed: playButtonPress,
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(5)),
                                 child: Row(

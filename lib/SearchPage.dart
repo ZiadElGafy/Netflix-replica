@@ -5,6 +5,7 @@ import 'main.dart';
 import 'DiscoverPage.dart';
 import 'FavoritesPage.dart';
 import 'MorePage.dart';
+import 'ListViewTile.dart';
 
 class SearchPage extends StatefulWidget {
   @override
@@ -12,6 +13,16 @@ class SearchPage extends StatefulWidget {
 }
 
 class _SearchPageState extends State<SearchPage> {
+//RENDERING FAVORITES FOR FAVORITES PAGE
+  void renderFavorites() {
+    favs = [];
+    for (int i = 0; i < database.length; i++) {
+      if (database[i]['isFav'] == true) {
+        favs.add(listViewTile(context, database[i]));
+      }
+    }
+  }
+
   //BOTTOM NAV BAR SELECTION
   int selectedIndex = 1;
   void indexSelected(int index) {

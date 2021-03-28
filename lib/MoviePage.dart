@@ -6,6 +6,8 @@ import 'SearchPage.dart';
 import 'DiscoverPage.dart';
 import 'FavoritesPage.dart';
 import 'MorePage.dart';
+import 'ListViewTile.dart';
+import 'package:intl/intl.dart';
 
 class MoviePage extends StatefulWidget {
   final Map mp;
@@ -19,6 +21,26 @@ class MoviePage extends StatefulWidget {
 }
 
 class _MoviePageState extends State<MoviePage> {
+//RENDERING FAVORITES FOR FAVORITES PAGE
+  void renderFavorites() {
+    favs = [];
+    for (int i = 0; i < database.length; i++) {
+      if (database[i]['isFav'] == true) {
+        favs.add(listViewTile(context, database[i]));
+      }
+    }
+  }
+
+  //PLAY BUTTON TAPPED
+  void playedMovie() {
+    setState(() {
+      widget.mp['played'] = true;
+      DateTime now = DateTime.now();
+      DateFormat formatter = DateFormat('MM-dd-yyyy');
+      widget.mp['playedDate'] = formatter.format(now);
+    });
+  }
+
   //BOTTOM NAV BAR SELECTION
   int selectedIndex = 0;
   void indexSelected(int index) {
@@ -201,7 +223,7 @@ class _MoviePageState extends State<MoviePage> {
                         width: MediaQuery.of(context).size.width / 2.1,
                         height: MediaQuery.of(context).size.height / 14,
                         child: RaisedButton(
-                          onPressed: () {},
+                          onPressed: playedMovie,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5)),
                           child: Row(
