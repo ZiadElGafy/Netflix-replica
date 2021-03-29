@@ -79,7 +79,7 @@ Card listViewTile(BuildContext context, Map mp) {
                                 : "You haven't watched this movie yet",
                             style: TextStyle(
                               color: Color.fromRGBO(150, 150, 150, 0.65),
-                              fontSize: 12,
+                              fontSize: 13,
                               fontFamily: 'Poppins',
                             ),
                           ),

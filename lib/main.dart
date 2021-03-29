@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'carrosellTile.dart';
 import 'MoviePage.dart';
 import 'SearchPage.dart';
-import 'DiscoverPage.dart';
 import 'FavoritesPage.dart';
 import 'MorePage.dart';
 import 'ListViewTile.dart';
@@ -275,7 +274,7 @@ var greyHound = {
   'isFav': false,
   'rating': 0,
   'name': 'greyHound',
-  'displayName': 'Grey Hound',
+  'displayName': 'Greyhound',
   'imdbrating': '6.8',
   'rottenrating': '7.2',
   'match': '70%',
@@ -404,19 +403,13 @@ class _HomePageState extends State<HomePage> {
         );
       }
       if (index == 2) {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => DiscoverPage()),
-        );
-      }
-      if (index == 3) {
         renderFavorites();
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => FavoritesPage()),
         );
       }
-      if (index == 4) {
+      if (index == 3) {
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => MorePage()),
@@ -1648,10 +1641,6 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.search),
             label: 'Search',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.explore),
-            label: 'Discover',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),

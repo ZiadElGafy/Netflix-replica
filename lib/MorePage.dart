@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'carrosellTile.dart';
 import 'MoviePage.dart';
 import 'SearchPage.dart';
-import 'DiscoverPage.dart';
 import 'FavoritesPage.dart';
 import 'main.dart';
 import 'ListViewTile.dart';
@@ -24,7 +23,7 @@ class _MorePageState extends State<MorePage> {
   }
 
   //BOTTOM NAV BAR SELECTION
-  int selectedIndex = 4;
+  int selectedIndex = 3;
   void indexSelected(int index) {
     setState(() {
       selectedIndex = index;
@@ -41,19 +40,13 @@ class _MorePageState extends State<MorePage> {
         );
       }
       if (index == 2) {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => DiscoverPage()),
-        );
-      }
-      if (index == 3) {
         renderFavorites();
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => FavoritesPage()),
         );
       }
-      if (index == 4) {
+      if (index == 3) {
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => MorePage()),
@@ -79,10 +72,6 @@ class _MorePageState extends State<MorePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.search),
             label: 'Search',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.explore),
-            label: 'Discover',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),

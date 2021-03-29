@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'SearchPage.dart';
-import 'DiscoverPage.dart';
 import 'main.dart';
 import 'MorePage.dart';
 import 'ListViewTile.dart';
@@ -22,7 +21,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
   }
 
   //BOTTOM NAV BAR SELECTION
-  int selectedIndex = 3;
+  int selectedIndex = 2;
   void indexSelected(int index) {
     setState(() {
       selectedIndex = index;
@@ -39,19 +38,13 @@ class _FavoritesPageState extends State<FavoritesPage> {
         );
       }
       if (index == 2) {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => DiscoverPage()),
-        );
-      }
-      if (index == 3) {
         renderFavorites();
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => FavoritesPage()),
         );
       }
-      if (index == 4) {
+      if (index == 3) {
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => MorePage()),
@@ -82,7 +75,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 2.1 / 10,
+                    height: MediaQuery.of(context).size.height * 2.4 / 10,
                   ),
                   Container(
                     width: MediaQuery.of(context).size.width / 1.6,
@@ -124,10 +117,6 @@ class _FavoritesPageState extends State<FavoritesPage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.search),
             label: 'Search',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.explore),
-            label: 'Discover',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),
