@@ -59,6 +59,17 @@ class _SearchPageState extends State<SearchPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
+      appBar: AppBar(
+        backgroundColor: Color.fromRGBO(100, 100, 100, 0.03),
+        centerTitle: true,
+        title: Text(
+          "Search",
+          style: TextStyle(
+            fontSize: 25,
+            fontFamily: 'Poppins',
+          ),
+        ),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.amber[800],
         unselectedItemColor: Colors.white,
