@@ -704,7 +704,7 @@ class _HomePageState extends State<HomePage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              "Movie of the day",
+                              "Movie of the dayeeee",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 25,
