@@ -340,6 +340,8 @@ List<Map> database = [
 ];
 
 List<Widget> favs = [];
+List<Widget> films = [];
+List<Widget> searchedfilms = [];
 
 class MovieApp extends StatelessWidget {
   @override
@@ -372,6 +374,13 @@ class _HomePageState extends State<HomePage> {
       if (database[i]['isFav'] == true) {
         favs.add(listViewTile(context, database[i]));
       }
+    }
+  }
+
+  void renderFilms() {
+    films = [];
+    for (int i = 0; i < database.length; i++) {
+      films.add(listViewTile(context, database[i]));
     }
   }
 
@@ -724,6 +733,7 @@ class _HomePageState extends State<HomePage> {
                             Container(
                               width: MediaQuery.of(context).size.width / 3.05,
                               height: MediaQuery.of(context).size.height / 18,
+                              // ignore: deprecated_member_use
                               child: RaisedButton(
                                 onPressed: playButtonPress,
                                 shape: RoundedRectangleBorder(

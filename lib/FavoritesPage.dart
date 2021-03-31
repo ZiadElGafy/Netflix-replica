@@ -20,6 +20,13 @@ class _FavoritesPageState extends State<FavoritesPage> {
     }
   }
 
+  void renderFilms() {
+    films = [];
+    for (int i = 0; i < database.length; i++) {
+      films.add(listViewTile(context, database[i]));
+    }
+  }
+
   //BOTTOM NAV BAR SELECTION
   int selectedIndex = 2;
   void indexSelected(int index) {
@@ -32,6 +39,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
         );
       }
       if (index == 1) {
+        renderFilms();
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => SearchPage()),

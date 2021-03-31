@@ -30,6 +30,13 @@ class _MoviePageState extends State<MoviePage> {
     }
   }
 
+  void renderFilms() {
+    films = [];
+    for (int i = 0; i < database.length; i++) {
+      films.add(listViewTile(context, database[i]));
+    }
+  }
+
   //PLAY BUTTON TAPPED
   void playedMovie() {
     setState(() {
@@ -52,6 +59,7 @@ class _MoviePageState extends State<MoviePage> {
         );
       }
       if (index == 1) {
+        renderFilms();
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => SearchPage()),
@@ -215,6 +223,7 @@ class _MoviePageState extends State<MoviePage> {
                       Container(
                         width: MediaQuery.of(context).size.width / 2.1,
                         height: MediaQuery.of(context).size.height / 14,
+                        // ignore: deprecated_member_use
                         child: RaisedButton(
                           onPressed: playedMovie,
                           shape: RoundedRectangleBorder(
