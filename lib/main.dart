@@ -334,7 +334,7 @@ var maleficent = {
       "https://i.pinimg.com/originals/2f/b8/63/2fb863e6dc16536ba5d59b1038257a00.jpg",
 };
 
-var the_hell = {
+var theHell = {
   'id': 20,
   'isFav': false,
   'rating': 0,
@@ -388,7 +388,7 @@ List<Map> database = [
   fast9,
   earthquake,
   maleficent,
-  the_hell,
+  theHell,
   illuminate
 ];
 
