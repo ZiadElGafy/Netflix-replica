@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'carrosellTile.dart';
 import 'MoviePage.dart';
 import 'main.dart';
 import 'FavoritesPage.dart';

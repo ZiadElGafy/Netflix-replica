@@ -22,6 +22,8 @@ Card listViewTile(BuildContext context, Map mp) {
       child: Row(
         children: [
           InkWell(
+            splashColor: Colors.transparent,
+            highlightColor: Colors.transparent,
             child: Container(
               height: MediaQuery.of(context).size.height * 2 / 10,
               color: Colors.transparent,
@@ -91,7 +93,8 @@ Card listViewTile(BuildContext context, Map mp) {
               ),
             ),
             onTap: () {
-              print("TAPPED");
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => MoviePage(mp)));
             },
           ),
         ],
