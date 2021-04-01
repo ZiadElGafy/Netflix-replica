@@ -21,6 +21,13 @@ class _MorePageState extends State<MorePage> {
     }
   }
 
+  void renderFilms() {
+    films = [];
+    for (int i = 0; i < database.length; i++) {
+      films.add(listViewTile(context, database[i]));
+    }
+  }
+
   //BOTTOM NAV BAR SELECTION
   int selectedIndex = 3;
   void indexSelected(int index) {
@@ -33,6 +40,7 @@ class _MorePageState extends State<MorePage> {
         );
       }
       if (index == 1) {
+        renderFilms();
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => SearchPage()),

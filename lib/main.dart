@@ -317,6 +317,56 @@ var earthquake = {
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2019/10/earthbirdpostera_thumb.jpg",
 };
+var maleficent = {
+  'id': 19,
+  'isFav': false,
+  'rating': 0,
+  'name': 'maleficent',
+  'displayName': 'Maleficent',
+  'imdbrating': '8.1',
+  'rottenrating': '8.3',
+  'match': '80%',
+  'releaseYear': '2020',
+  'titleFontSize': 23.0,
+  'played': false,
+  'datePlayed': "",
+  'link':
+      "https://i.pinimg.com/originals/2f/b8/63/2fb863e6dc16536ba5d59b1038257a00.jpg",
+};
+
+var theHell = {
+  'id': 20,
+  'isFav': false,
+  'rating': 0,
+  'name': 'the hill',
+  'displayName': 'The hill',
+  'imdbrating': '8.1',
+  'rottenrating': '4.3',
+  'match': '80%',
+  'releaseYear': '2021',
+  'titleFontSize': 23.0,
+  'played': false,
+  'datePlayed': "",
+  'link':
+      "https://i.egycdn.com/pic/WmFwZndlY21ZcGptSGNtRW1tRWN2d1BtdnZOZ2FtemE.jpg",
+};
+
+var illuminate = {
+  'id': 21,
+  'isFav': false,
+  'rating': 0,
+  'name': 'illuminate',
+  'displayName': 'Illuminate',
+  'imdbrating': '8.1',
+  'rottenrating': '5.3',
+  'match': '65%',
+  'releaseYear': '2021',
+  'titleFontSize': 23.0,
+  'played': false,
+  'datePlayed': "",
+  'link':
+      "https://i.egycdn.com/pic/WmFwZndlY21ZTGNtRW1qdk5lY212bXZtdm1FbUl4bHg.jpg",
+};
 List<Map> database = [
   sonic,
   starWars,
@@ -336,10 +386,15 @@ List<Map> database = [
   blackWidow,
   bohemianRhapsody,
   fast9,
-  earthquake
+  earthquake,
+  maleficent,
+  theHell,
+  illuminate
 ];
 
 List<Widget> favs = [];
+List<Widget> films = [];
+List<Widget> searchedfilms = [];
 
 class MovieApp extends StatelessWidget {
   @override
@@ -372,6 +427,13 @@ class _HomePageState extends State<HomePage> {
       if (database[i]['isFav'] == true) {
         favs.add(listViewTile(context, database[i]));
       }
+    }
+  }
+
+  void renderFilms() {
+    films = [];
+    for (int i = 0; i < database.length; i++) {
+      films.add(listViewTile(context, database[i]));
     }
   }
 
@@ -724,6 +786,7 @@ class _HomePageState extends State<HomePage> {
                             Container(
                               width: MediaQuery.of(context).size.width / 3.05,
                               height: MediaQuery.of(context).size.height / 18,
+                              // ignore: deprecated_member_use
                               child: RaisedButton(
                                 onPressed: playButtonPress,
                                 shape: RoundedRectangleBorder(
