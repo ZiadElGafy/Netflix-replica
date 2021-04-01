@@ -47,10 +47,9 @@ class _SearchPageState extends State<SearchPage> {
     });
   }
 
-  // ignore: non_constant_identifier_names
+  // ignore: non_constant_identifier_names//
   void searchfilms(String f_name) {
     searchedfilms = [];
-
     setState(() {
       for (int i = 0; i < database.length; i++) {
         String s1 = f_name[0].toUpperCase();
