@@ -257,6 +257,7 @@ class _MoviePageState extends State<MoviePage> {
                       Container(
                         width: MediaQuery.of(context).size.width / 2.1,
                         height: MediaQuery.of(context).size.height / 14,
+                        // ignore: deprecated_member_use
                         child: RaisedButton(
                           onPressed: () {},
                           shape: RoundedRectangleBorder(

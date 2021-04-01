@@ -395,6 +395,7 @@ List<Map> database = [
 List<Widget> favs = [];
 List<Widget> films = [];
 List<Widget> searchedfilms = [];
+List<Widget> Rated = [];
 
 class MovieApp extends StatelessWidget {
   @override
@@ -426,6 +427,15 @@ class _HomePageState extends State<HomePage> {
     for (int i = 0; i < database.length; i++) {
       if (database[i]['isFav'] == true) {
         favs.add(listViewTile(context, database[i]));
+      }
+    }
+  }
+
+  void renderRated() {
+    Rated = [];
+    for (int i = 0; i < database.length; i++) {
+      if (database[i]['rating'] != 0) {
+        Rated.add(listViewTile(context, database[i]));
       }
     }
   }
@@ -1708,6 +1718,10 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),
             label: 'Favorites',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.live_tv_outlined),
+            label: 'Rated',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.table_rows),

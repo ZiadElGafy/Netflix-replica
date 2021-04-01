@@ -16,6 +16,7 @@ class _SearchPageState extends State<SearchPage> {
   bool changed = false;
   final TextEditingController myController = TextEditingController();
   String searchtxt;
+  String s1;
 
   @override
   void dispose() {
@@ -51,9 +52,14 @@ class _SearchPageState extends State<SearchPage> {
   void searchfilms(String f_name) {
     searchedfilms = [];
 
+    for (int j = 0; j < f_name.length; j++) {
+      if (f_name[j] == ' ' && j < f_name.length - 1) {
+        f_name[j + 1].toUpperCase();
+      }
+    }
     setState(() {
       for (int i = 0; i < database.length; i++) {
-        String s1 = f_name[0].toUpperCase();
+        s1 = f_name[0].toUpperCase();
         if (database[i]['displayName'] == (s1 + f_name.substring(1))) {
           searchedfilms.removeRange(0, searchedfilms.length);
           searchedfilms.add(listViewTile(context, database[i]));
@@ -219,6 +225,10 @@ class _SearchPageState extends State<SearchPage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),
             label: 'Favorites',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.live_tv_rounded),
+            label: 'Rated',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.table_rows),
