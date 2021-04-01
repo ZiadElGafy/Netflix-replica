@@ -323,9 +323,9 @@ var maleficent = {
   'rating': 0,
   'name': 'maleficent',
   'displayName': 'Maleficent',
-  'imdbrating': '8.1',
-  'rottenrating': '8.3',
-  'match': '80%',
+  'imdbrating': '8.4',
+  'rottenrating': '8.0',
+  'match': '89%',
   'releaseYear': '2020',
   'titleFontSize': 23.0,
   'played': false,
@@ -334,15 +334,15 @@ var maleficent = {
       "https://i.pinimg.com/originals/2f/b8/63/2fb863e6dc16536ba5d59b1038257a00.jpg",
 };
 
-var theHell = {
+var theHill = {
   'id': 20,
   'isFav': false,
   'rating': 0,
-  'name': 'the hill',
-  'displayName': 'The hill',
-  'imdbrating': '8.1',
-  'rottenrating': '4.3',
-  'match': '80%',
+  'name': 'theHill',
+  'displayName': 'The Hill',
+  'imdbrating': '7.6',
+  'rottenrating': '7.8',
+  'match': '71%',
   'releaseYear': '2021',
   'titleFontSize': 23.0,
   'played': false,
@@ -357,9 +357,9 @@ var illuminate = {
   'rating': 0,
   'name': 'illuminate',
   'displayName': 'Illuminate',
-  'imdbrating': '8.1',
-  'rottenrating': '5.3',
-  'match': '65%',
+  'imdbrating': '9.0',
+  'rottenrating': '9.3',
+  'match': '96%',
   'releaseYear': '2021',
   'titleFontSize': 23.0,
   'played': false,
@@ -388,7 +388,7 @@ List<Map> database = [
   fast9,
   earthquake,
   maleficent,
-  theHell,
+  theHill,
   illuminate
 ];
 
@@ -1734,6 +1734,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-//NEXT: ADD MORE CARROSELLS
-//EDITED: 6/2 --- 13:00 --- ~z
