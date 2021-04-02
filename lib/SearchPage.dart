@@ -228,10 +228,6 @@ class _SearchPageState extends State<SearchPage> {
             label: 'Favorites',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.live_tv_rounded),
-            label: 'Rated',
-          ),
-          BottomNavigationBarItem(
             icon: Icon(Icons.table_rows),
             label: 'More',
           ),
