@@ -1,5 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter/cupertino.dart';
 import 'carrosellTile.dart';
 import 'main.dart';
 import 'SearchPage.dart';
@@ -40,11 +41,17 @@ class _MoviePageState extends State<MoviePage> {
   //PLAY BUTTON TAPPED
   void playedMovie() {
     setState(() {
+      openurl(widget.mp['flimlink']);
       widget.mp['played'] = true;
       DateTime now = DateTime.now();
       DateFormat formatter = DateFormat('MM-dd-yyyy');
       widget.mp['playedDate'] = formatter.format(now);
     });
+  }
+
+  openurl(String s) {
+    String film = s;
+    launch(film);
   }
 
   //BOTTOM NAV BAR SELECTION

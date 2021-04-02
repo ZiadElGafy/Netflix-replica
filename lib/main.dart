@@ -28,6 +28,8 @@ Map sonic = {
   'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/01/sonic_the_hedgehog_poster3_thumb.jpg",
+  'flimlink':
+      "https://eg.egybest.com/movie/sonic-the-hedgehog-2020/?ref=search-p1#download"
 };
 var starWars = {
   'id': 1,
@@ -44,6 +46,8 @@ var starWars = {
   'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2019/08/star-wars-rise-of-skywalker-poster-2_thumb.jpg",
+  'flimlink':
+      "https://eg.egybest.com/movie/star-wars-the-rise-of-skywalker-2019/#download"
 };
 var onward = {
   'id': 2,
@@ -60,6 +64,7 @@ var onward = {
   'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2019/05/onward_xlga_thumb.jpg",
+  'flimlink': "https://eg.egybest.com/movie/onward-2020/#download"
 };
 var noTimeToDie = {
   'id': 3,
@@ -76,6 +81,7 @@ var noTimeToDie = {
   'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/09/No-Time-to-Die-November-poster_thumb.jpg",
+  'flimlink': "https://eg.egybest.com/movie/onward-2020/#download"
 };
 var avengers = {
   'id': 4,
@@ -92,6 +98,7 @@ var avengers = {
   'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2019/04/avengers_endgame_ver44_xlg_thumb.jpg",
+  'flimlink': "https://eg.egybest.com/movie/avengers-endgame-2019/#download"
 };
 var aladdin = {
   'id': 5,
@@ -108,6 +115,7 @@ var aladdin = {
   'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2019/03/aladdin-poster-2019_thumb.jpg",
+  'flimlink': "https://eg.egybest.com/movie/aladdin-2019/#download"
 };
 var creed = {
   'id': 6,
@@ -124,6 +132,7 @@ var creed = {
   'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/oldsite/posters/images/full/creed21200poster_thumb.jpg",
+  'flimlink': "https://eg.egybest.com/movie/creed-ii-2018/#download"
 };
 var theKid = {
   'id': 7,
@@ -140,6 +149,8 @@ var theKid = {
   'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2018/10/The-Kid-Who-Would-Be-King-poster-1a_thumb.jpg",
+  'flimlink':
+      "https://eg.egybest.com/movie/the-kid-who-would-be-king-2019/#download"
 };
 var searching = {
   'id': 8,
@@ -156,6 +167,7 @@ var searching = {
   'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/oldsite/posters/images/full/Searching-poster-1_thumb.jpg",
+  'flimlink': "https://eg.egybest.com/movie/searching-2018/#download"
 };
 var ralph = {
   'id': 9,
@@ -172,6 +184,8 @@ var ralph = {
   'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/oldsite/posters/images/full/ralph2-main-poster-xl_thumb.jpg",
+  'flimlink':
+      "https://eg.egybest.com/movie/ralph-breaks-the-internet-2018/#download"
 };
 var bohemianRhapsody = {
   'id': 10,
@@ -188,6 +202,7 @@ var bohemianRhapsody = {
   'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/oldsite/posters/images/full/bohemian_rhapsody_poster-xl_thumb.jpg",
+  'flimlink': "https://eg.egybest.com/movie/bohemian-rhapsody-2018/#download"
 };
 var incredibles = {
   'id': 11,
@@ -204,6 +219,7 @@ var incredibles = {
   'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/oldsite/posters/images/full/incredibles-2-poster_thumb.jpg",
+  'flimlink': "https://eg.egybest.com/movie/incredibles-2-2018/#download"
 };
 var doctorSleep = {
   'id': 12,
@@ -220,6 +236,7 @@ var doctorSleep = {
   'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2019/10/Doctor-Sleep-poster-2_thumb.jpg",
+  'flimlink': "https://eg.egybest.com/movie/doctor-sleep-2019/#download"
 };
 var tenet = {
   'id': 13,
@@ -236,6 +253,7 @@ var tenet = {
   'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/07/tenetposterinter_thumb.jpg",
+  'flimlink': "https://eg.egybest.com/movie/tenet-2020/#download"
 };
 var radioactive = {
   'id': 14,
@@ -252,6 +270,7 @@ var radioactive = {
   'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/07/radioactive-poster_thumb.jpg",
+  'flimlink': "https://eg.egybest.com/movie/radioactive-2019/#download"
 };
 var blackWidow = {
   'id': 15,
@@ -268,6 +287,7 @@ var blackWidow = {
   'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/03/2EF9FAE7-B888-4DBA-868D-B4E289BAE769_thumb.jpeg",
+  'flimlink': "https://eg.egybest.com/movie/black-widow-1987/"
 };
 var greyHound = {
   'id': 16,
@@ -284,6 +304,7 @@ var greyHound = {
   'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/03/greyhoundposter_thumb.jpg",
+  'flimlink': "https://eg.egybest.com/movie/greyhound-2020/"
 };
 var fast9 = {
   'id': 17,
@@ -300,6 +321,8 @@ var fast9 = {
   'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2020/01/Fast--Furious-9-Han-poster_thumb.jpg",
+  'flimlink':
+      "https://eg.egybest.com/movie/fast-and-furious-presents-hobbs-and-shaw-2019/"
 };
 var earthquake = {
   'id': 18,
@@ -316,6 +339,7 @@ var earthquake = {
   'datePlayed': "",
   'link':
       "https://www.joblo.com/assets/images/joblo/posters/2019/10/earthbirdpostera_thumb.jpg",
+  'flimlink': "https://eg.egybest.com/movie/earthquake-bird-2019/#download"
 };
 var maleficent = {
   'id': 19,
@@ -332,6 +356,7 @@ var maleficent = {
   'datePlayed': "",
   'link':
       "https://i.pinimg.com/originals/2f/b8/63/2fb863e6dc16536ba5d59b1038257a00.jpg",
+  'flimlink': "https://eg.egybest.com/movie/maleficent-2014/"
 };
 
 var theHill = {
@@ -349,6 +374,7 @@ var theHill = {
   'datePlayed': "",
   'link':
       "https://i.egycdn.com/pic/WmFwZndlY21ZcGptSGNtRW1tRWN2d1BtdnZOZ2FtemE.jpg",
+  'flimlink': "https://eg.egybest.com/movie/the-hill-and-the-hole-2019/"
 };
 
 var illuminate = {
@@ -366,7 +392,10 @@ var illuminate = {
   'datePlayed': "",
   'link':
       "https://i.egycdn.com/pic/WmFwZndlY21ZTGNtRW1qdk5lY212bXZtdm1FbUl4bHg.jpg",
+  'flimlink':
+      "https://eg.egybest.com/movie/illuminate-2020/?ref=home-new#download"
 };
+
 List<Map> database = [
   sonic,
   starWars,
@@ -395,7 +424,7 @@ List<Map> database = [
 List<Widget> favs = [];
 List<Widget> films = [];
 List<Widget> searchedfilms = [];
-List<Widget> Rated = [];
+List<Widget> rated = [];
 
 class MovieApp extends StatelessWidget {
   @override
@@ -432,10 +461,10 @@ class _HomePageState extends State<HomePage> {
   }
 
   void renderRated() {
-    Rated = [];
+    rated = [];
     for (int i = 0; i < database.length; i++) {
       if (database[i]['rating'] != 0) {
-        Rated.add(listViewTile(context, database[i]));
+        rated.add(listViewTile(context, database[i]));
       }
     }
   }
