@@ -791,8 +791,7 @@ class _HomePageState extends State<HomePage> {
               height: MediaQuery.of(context).size.height * 7.5 / 10,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: NetworkImage(
-                      'https://www.joblo.com/assets/images/joblo/posters/2019/10/earthbirdpostera_thumb.jpg'),
+                  image: NetworkImage(earthquake['link']),
                   fit: BoxFit.fill,
                 ),
               ),

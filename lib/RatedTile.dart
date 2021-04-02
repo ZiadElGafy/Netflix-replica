@@ -59,20 +59,47 @@ Card ratedTile(BuildContext context, Map mp) {
                             ),
                           ),
                         ),
-                        SizedBox(height: 1.5),
+                        SizedBox(height: 7),
                         FittedBox(
-                          fit: BoxFit.fitWidth,
-                          child: Text(
-                            mp['match'] + " Match",
-                            style: TextStyle(
-                              fontFamily: 'Poppins',
-                              fontSize: 20,
-                              color: Color.fromRGBO(50, 255, 50, 0.9),
-                              letterSpacing: 0.8,
-                            ),
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.grade,
+                                size: 40,
+                                color: Color.fromRGBO(140, 255, 0, 1),
+                              ),
+                              Icon(
+                                mp['rating'] >= 2
+                                    ? Icons.grade
+                                    : Icons.grade_outlined,
+                                size: 40,
+                                color: Color.fromRGBO(140, 255, 0, 1),
+                              ),
+                              Icon(
+                                mp['rating'] >= 3
+                                    ? Icons.grade
+                                    : Icons.grade_outlined,
+                                size: 40,
+                                color: Color.fromRGBO(140, 255, 0, 1),
+                              ),
+                              Icon(
+                                mp['rating'] >= 4
+                                    ? Icons.grade
+                                    : Icons.grade_outlined,
+                                size: 40,
+                                color: Color.fromRGBO(140, 255, 0, 1),
+                              ),
+                              Icon(
+                                mp['rating'] == 5
+                                    ? Icons.grade
+                                    : Icons.grade_outlined,
+                                size: 40,
+                                color: Color.fromRGBO(140, 255, 0, 1),
+                              ),
+                            ],
                           ),
                         ),
-                        SizedBox(height: 30),
+                        SizedBox(height: 10),
                         FittedBox(
                           fit: BoxFit.fitWidth,
                           child: Text(
