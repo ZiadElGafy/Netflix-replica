@@ -147,83 +147,99 @@ class _SearchPageState extends State<SearchPage> {
       backgroundColor: Colors.transparent,
       body: Column(
         children: <Widget>[
-          Container(
-            width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height * 0.3 / 10,
+          Flexible(
+            flex: 1,
+            child: Container(
+              width: MediaQuery.of(context).size.width,
+            ),
           ),
-          Container(
-            width: MediaQuery.of(context).size.width * 8.5 / 10,
-            height: MediaQuery.of(context).size.height * 0.6 / 10,
-            child: TextField(
-              onChanged: (myController) {
-                searchtxt = myController;
-                if (searchtxt.length != 0) {
-                  searchfilms(searchtxt);
-                } else {
-                  renderFilms();
-                }
+          Flexible(
+            flex: 2,
+            child: Container(
+              width: MediaQuery.of(context).size.width * 8.5 / 10,
+              child: Column(
+                children: [
+                  TextField(
+                    onChanged: (myController) {
+                      searchtxt = myController;
+                      if (searchtxt.length != 0) {
+                        searchfilms(searchtxt);
+                      } else {
+                        renderFilms();
+                      }
 
-                print(searchtxt);
-                print(changed & found);
-              },
-              style: TextStyle(
-                  color: Colors.white,
-                  fontFamily: 'Poppins',
-                  fontSize: 25,
-                  letterSpacing: 0.0),
-              autocorrect: true,
-              decoration: InputDecoration(
-                hintText: "Search",
-                hintStyle: TextStyle(
-                  color: Colors.white,
-                ),
-                enabledBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white),
-                ),
-                focusedBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white),
-                ),
+                      print(searchtxt);
+                      print(changed & found);
+                    },
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'Poppins',
+                        fontSize: 25,
+                        letterSpacing: 0.0),
+                    autocorrect: true,
+                    decoration: InputDecoration(
+                      hintText: "Search",
+                      hintStyle: TextStyle(
+                        color: Colors.white,
+                      ),
+                      enabledBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: Colors.white),
+                      ),
+                      focusedBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 1),
+                ],
               ),
             ),
           ),
           searchedfilms.length == 0 && (found == false) && (changed == true)
-              ? Container(
-                  width: MediaQuery.of(context).size.width,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      SizedBox(
-                        height: MediaQuery.of(context).size.height * 2.4 / 10,
-                      ),
-                      Container(
-                        width: MediaQuery.of(context).size.width / 1.6,
-                        child: Image.asset('assets/noRated.png'),
-                      ),
-                      SizedBox(
-                        height: MediaQuery.of(context).size.height * 0.17 / 10,
-                      ),
-                      Text(
-                        "No Movies Found",
-                        style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 21,
-                          color: Colors.white,
+              ? Flexible(
+                  flex: 14,
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        SizedBox(
+                          height:
+                              MediaQuery.of(context).size.height * 1.67 / 10,
                         ),
-                      ),
-                    ],
+                        Container(
+                          width: MediaQuery.of(context).size.width / 1.6,
+                          child: Image.asset('assets/noRated.png'),
+                        ),
+                        SizedBox(
+                          height:
+                              MediaQuery.of(context).size.height * 0.17 / 10,
+                        ),
+                        Text(
+                          "No Movies Found",
+                          style: TextStyle(
+                            fontFamily: 'Poppins',
+                            fontSize: 21,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 )
-              : Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height * 8.4 / 10,
-                  color: Colors.transparent,
-                  child: SingleChildScrollView(
-                    child: Column(
-                        children: (searchedfilms.length == 0) &&
-                                (changed == false) &&
-                                (found == false)
-                            ? films
-                            : searchedfilms),
+              : Flexible(
+                  flex: 14,
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    color: Colors.transparent,
+                    child: SingleChildScrollView(
+                      child: Column(
+                          children: (searchedfilms.length == 0) &&
+                                  (changed == false) &&
+                                  (found == false)
+                              ? films
+                              : searchedfilms),
+                    ),
                   ),
                 ),
         ],
