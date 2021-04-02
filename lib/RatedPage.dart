@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'SearchPage.dart';
 import 'main.dart';
 import 'MorePage.dart';
-import 'RatedPage.dart';
-import 'RatedTile.dart';
 import 'ListViewTile.dart';
+import 'FavoritesPage.dart';
+import 'RatedTile.dart';
 
-class FavoritesPage extends StatefulWidget {
+class RatedPage extends StatefulWidget {
   @override
-  _FavoritesPageState createState() => _FavoritesPageState();
+  _RatedPageState createState() => _RatedPageState();
 }
 
-class _FavoritesPageState extends State<FavoritesPage> {
+class _RatedPageState extends State<RatedPage> {
 //RENDERING FAVORITES FOR FAVORITES PAGE
   void renderFavorites() {
     favs = [];
@@ -40,7 +40,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
   }
 
   //BOTTOM NAV BAR SELECTION
-  int selectedIndex = 2;
+  int selectedIndex = 3;
   void indexSelected(int index) {
     setState(() {
       selectedIndex = index;
@@ -87,7 +87,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
         backgroundColor: Color.fromRGBO(100, 100, 100, 0.03),
         centerTitle: true,
         title: Text(
-          "Favorites",
+          "Rated",
           style: TextStyle(
             fontSize: 25,
             fontFamily: 'Poppins',
@@ -95,7 +95,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
         ),
       ),
       backgroundColor: Colors.transparent,
-      body: favs.length == 0
+      body: rated.length == 0
           ? Container(
               width: MediaQuery.of(context).size.width,
               child: Column(
@@ -127,7 +127,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
               color: Colors.transparent,
               child: SingleChildScrollView(
                 child: Column(
-                  children: favs,
+                  children: rated,
                 ),
               ),
             ),

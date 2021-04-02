@@ -4,6 +4,8 @@ import 'MoviePage.dart';
 import 'SearchPage.dart';
 import 'FavoritesPage.dart';
 import 'main.dart';
+import 'RatedPage.dart';
+import 'RatedTile.dart';
 import 'ListViewTile.dart';
 
 class MorePage extends StatefulWidget {
@@ -22,6 +24,16 @@ class _MorePageState extends State<MorePage> {
     }
   }
 
+  //RENDERING RATED FOR RATED PAGE
+  void renderRated() {
+    rated = [];
+    for (int i = 0; i < database.length; i++) {
+      if (database[i]['rating'] != 0) {
+        rated.add(ratedTile(context, database[i]));
+      }
+    }
+  }
+
   void renderFilms() {
     films = [];
     for (int i = 0; i < database.length; i++) {
@@ -30,7 +42,7 @@ class _MorePageState extends State<MorePage> {
   }
 
   //BOTTOM NAV BAR SELECTION
-  int selectedIndex = 3;
+  int selectedIndex = 4;
   void indexSelected(int index) {
     setState(() {
       selectedIndex = index;
@@ -55,6 +67,13 @@ class _MorePageState extends State<MorePage> {
         );
       }
       if (index == 3) {
+        renderRated();
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => RatedPage()),
+        );
+      }
+      if (index == 4) {
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => MorePage()),
@@ -345,6 +364,10 @@ class _MorePageState extends State<MorePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),
             label: 'Favorites',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.grade),
+            label: 'Rated',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.table_rows),

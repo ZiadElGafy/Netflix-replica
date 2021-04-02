@@ -7,6 +7,8 @@ import 'SearchPage.dart';
 import 'FavoritesPage.dart';
 import 'MorePage.dart';
 import 'ListViewTile.dart';
+import 'RatedPage.dart';
+import 'RatedTile.dart';
 import 'package:intl/intl.dart';
 
 class MoviePage extends StatefulWidget {
@@ -31,10 +33,20 @@ class _MoviePageState extends State<MoviePage> {
     }
   }
 
+  //RENDERING RATED FOR RATED PAGE
+  void renderRated() {
+    rated = [];
+    for (int i = 0; i < database.length; i++) {
+      if (database[i]['rating'] != 0) {
+        rated.add(ratedTile(context, database[i]));
+      }
+    }
+  }
+
   void renderFilms() {
     films = [];
     for (int i = 0; i < database.length; i++) {
-      films.add(listViewTile(context, database[i]));
+      films.add(ratedTile(context, database[i]));
     }
   }
 
@@ -80,6 +92,13 @@ class _MoviePageState extends State<MoviePage> {
         );
       }
       if (index == 3) {
+        renderRated();
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => RatedPage()),
+        );
+      }
+      if (index == 4) {
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => MorePage()),
@@ -940,6 +959,10 @@ class _MoviePageState extends State<MoviePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),
             label: 'Favorites',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.grade),
+            label: 'Rated',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.table_rows),

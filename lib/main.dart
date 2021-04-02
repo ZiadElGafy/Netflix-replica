@@ -6,6 +6,8 @@ import 'SearchPage.dart';
 import 'FavoritesPage.dart';
 import 'MorePage.dart';
 import 'ListViewTile.dart';
+import 'RatedPage.dart';
+import 'RatedTile.dart';
 import 'package:intl/intl.dart';
 
 void main() {
@@ -460,11 +462,12 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
+  //RENDERING RATED FOR RATED PAGE
   void renderRated() {
     rated = [];
     for (int i = 0; i < database.length; i++) {
       if (database[i]['rating'] != 0) {
-        rated.add(listViewTile(context, database[i]));
+        rated.add(ratedTile(context, database[i]));
       }
     }
   }
@@ -511,6 +514,13 @@ class _HomePageState extends State<HomePage> {
         );
       }
       if (index == 3) {
+        renderRated();
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => RatedPage()),
+        );
+      }
+      if (index == 4) {
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => MorePage()),
@@ -1749,7 +1759,7 @@ class _HomePageState extends State<HomePage> {
             label: 'Favorites',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.live_tv_outlined),
+            icon: Icon(Icons.grade),
             label: 'Rated',
           ),
           BottomNavigationBarItem(
