@@ -29,7 +29,7 @@ Map sonic = {
   'played': false,
   'datePlayed': "",
   'link':
-      "https://www.joblo.com/assets/images/joblo/posters/2020/01/sonic_the_hedgehog_poster3_thumb.jpg",
+      "https://web.archive.org/web/20210702015829if_/https://www.joblo.com/assets/images/joblo/posters/2020/01/sonic_the_hedgehog_poster3_thumb.jpg",
   'flimlink':
       "https://eg.egybest.com/movie/sonic-the-hedgehog-2020/?ref=search-p1#download"
 };
@@ -47,7 +47,7 @@ var starWars = {
   'played': false,
   'datePlayed': "",
   'link':
-      "https://www.joblo.com/assets/images/joblo/posters/2019/08/star-wars-rise-of-skywalker-poster-2_thumb.jpg",
+      "https://web.archive.org/web/20210420172027if_/https://www.joblo.com/assets/images/joblo/posters/2019/08/star-wars-rise-of-skywalker-poster-2_thumb.jpg",
   'flimlink':
       "https://eg.egybest.com/movie/star-wars-the-rise-of-skywalker-2019/#download"
 };
@@ -65,7 +65,7 @@ var onward = {
   'played': false,
   'datePlayed': "",
   'link':
-      "https://www.joblo.com/assets/images/joblo/posters/2019/05/onward_xlga_thumb.jpg",
+      "https://web.archive.org/web/20210420211251if_/https://www.joblo.com/assets/images/joblo/posters/2019/05/onward_xlga_thumb.jpg",
   'flimlink': "https://eg.egybest.com/movie/onward-2020/#download"
 };
 var noTimeToDie = {
@@ -82,7 +82,7 @@ var noTimeToDie = {
   'played': false,
   'datePlayed': "",
   'link':
-      "https://www.joblo.com/assets/images/joblo/posters/2020/09/No-Time-to-Die-November-poster_thumb.jpg",
+      "https://web.archive.org/web/20210421103913if_/https://www.joblo.com/assets/images/joblo/posters/2020/09/No-Time-to-Die-November-poster_thumb.jpg",
   'flimlink': "https://eg.egybest.com/movie/onward-2020/#download"
 };
 var avengers = {
@@ -99,7 +99,7 @@ var avengers = {
   'played': false,
   'datePlayed': "",
   'link':
-      "https://www.joblo.com/assets/images/joblo/posters/2019/04/avengers_endgame_ver44_xlg_thumb.jpg",
+      "https://web.archive.org/web/20210421092650if_/https://www.joblo.com/assets/images/joblo/posters/2019/04/avengers_endgame_ver44_xlg_thumb.jpg",
   'flimlink': "https://eg.egybest.com/movie/avengers-endgame-2019/#download"
 };
 var aladdin = {
@@ -116,7 +116,7 @@ var aladdin = {
   'played': false,
   'datePlayed': "",
   'link':
-      "https://www.joblo.com/assets/images/joblo/posters/2019/03/aladdin-poster-2019_thumb.jpg",
+      "https://web.archive.org/web/20210714113929if_/https://www.joblo.com/assets/images/joblo/posters/2019/03/aladdin-poster-2019_thumb.jpg",
   'flimlink': "https://eg.egybest.com/movie/aladdin-2019/#download"
 };
 var creed = {
@@ -133,7 +133,7 @@ var creed = {
   'played': false,
   'datePlayed': "",
   'link':
-      "https://www.joblo.com/assets/images/oldsite/posters/images/full/creed21200poster_thumb.jpg",
+      "https://web.archive.org/web/20210420022110if_/https://www.joblo.com/assets/images/oldsite/posters/images/full/creed21200poster_thumb.jpg",
   'flimlink': "https://eg.egybest.com/movie/creed-ii-2018/#download"
 };
 var theKid = {
@@ -150,7 +150,7 @@ var theKid = {
   'played': false,
   'datePlayed': "",
   'link':
-      "https://www.joblo.com/assets/images/joblo/posters/2018/10/The-Kid-Who-Would-Be-King-poster-1a_thumb.jpg",
+      "https://web.archive.org/web/20210420140816if_/https://www.joblo.com/assets/images/joblo/posters/2018/10/The-Kid-Who-Would-Be-King-poster-1a_thumb.jpg",
   'flimlink':
       "https://eg.egybest.com/movie/the-kid-who-would-be-king-2019/#download"
 };
@@ -168,7 +168,7 @@ var searching = {
   'played': false,
   'datePlayed': "",
   'link':
-      "https://www.joblo.com/assets/images/oldsite/posters/images/full/Searching-poster-1_thumb.jpg",
+      "https://web.archive.org/web/20210721034752if_/https://www.joblo.com/assets/images/oldsite/posters/images/full/Searching-poster-1_thumb.jpg",
   'flimlink': "https://eg.egybest.com/movie/searching-2018/#download"
 };
 var ralph = {
@@ -185,7 +185,7 @@ var ralph = {
   'played': false,
   'datePlayed': "",
   'link':
-      "https://www.joblo.com/assets/images/oldsite/posters/images/full/ralph2-main-poster-xl_thumb.jpg",
+      "https://web.archive.org/web/20210420151817if_/https://www.joblo.com/assets/images/oldsite/posters/images/full/ralph2-main-poster-xl_thumb.jpg",
   'flimlink':
       "https://eg.egybest.com/movie/ralph-breaks-the-internet-2018/#download"
 };
@@ -203,7 +203,7 @@ var bohemianRhapsody = {
   'played': false,
   'datePlayed': "",
   'link':
-      "https://www.joblo.com/assets/images/oldsite/posters/images/full/bohemian_rhapsody_poster-xl_thumb.jpg",
+      "https://web.archive.org/web/20210213164515if_/https://www.joblo.com/assets/images/oldsite/posters/images/full/bohemian_rhapsody_poster-xl_thumb.jpg",
   'flimlink': "https://eg.egybest.com/movie/bohemian-rhapsody-2018/#download"
 };
 var incredibles = {
@@ -220,7 +220,7 @@ var incredibles = {
   'played': false,
   'datePlayed': "",
   'link':
-      "https://www.joblo.com/assets/images/oldsite/posters/images/full/incredibles-2-poster_thumb.jpg",
+      "https://web.archive.org/web/20210420033245if_/https://www.joblo.com/assets/images/oldsite/posters/images/full/incredibles-2-poster_thumb.jpg",
   'flimlink': "https://eg.egybest.com/movie/incredibles-2-2018/#download"
 };
 var doctorSleep = {
@@ -237,7 +237,7 @@ var doctorSleep = {
   'played': false,
   'datePlayed': "",
   'link':
-      "https://www.joblo.com/assets/images/joblo/posters/2019/10/Doctor-Sleep-poster-2_thumb.jpg",
+      "https://web.archive.org/web/20210413144131if_/https://www.joblo.com/assets/images/joblo/posters/2019/10/Doctor-Sleep-poster-2_thumb.jpg",
   'flimlink': "https://eg.egybest.com/movie/doctor-sleep-2019/#download"
 };
 var tenet = {
@@ -254,7 +254,7 @@ var tenet = {
   'played': false,
   'datePlayed': "",
   'link':
-      "https://www.joblo.com/assets/images/joblo/posters/2020/07/tenetposterinter_thumb.jpg",
+      "https://web.archive.org/web/20210413080529if_/https://www.joblo.com/assets/images/joblo/posters/2020/07/tenetposterinter_thumb.jpg",
   'flimlink': "https://eg.egybest.com/movie/tenet-2020/#download"
 };
 var radioactive = {
@@ -271,7 +271,7 @@ var radioactive = {
   'played': false,
   'datePlayed': "",
   'link':
-      "https://www.joblo.com/assets/images/joblo/posters/2020/07/radioactive-poster_thumb.jpg",
+      "https://web.archive.org/web/20210420072056if_/https://www.joblo.com/assets/images/joblo/posters/2020/07/radioactive-poster_thumb.jpg",
   'flimlink': "https://eg.egybest.com/movie/radioactive-2019/#download"
 };
 var blackWidow = {
@@ -288,7 +288,7 @@ var blackWidow = {
   'played': false,
   'datePlayed': "",
   'link':
-      "https://www.joblo.com/assets/images/joblo/posters/2020/03/2EF9FAE7-B888-4DBA-868D-B4E289BAE769_thumb.jpeg",
+      "https://web.archive.org/web/20210414052536if_/https://www.joblo.com/assets/images/joblo/posters/2020/03/2EF9FAE7-B888-4DBA-868D-B4E289BAE769_thumb.jpeg",
   'flimlink': "https://eg.egybest.com/movie/black-widow-1987/"
 };
 var greyHound = {
@@ -305,7 +305,7 @@ var greyHound = {
   'played': false,
   'datePlayed': "",
   'link':
-      "https://www.joblo.com/assets/images/joblo/posters/2020/03/greyhoundposter_thumb.jpg",
+      "https://web.archive.org/web/20210421055246if_/https://www.joblo.com/assets/images/joblo/posters/2020/03/greyhoundposter_thumb.jpg",
   'flimlink': "https://eg.egybest.com/movie/greyhound-2020/"
 };
 var fast9 = {
@@ -322,7 +322,7 @@ var fast9 = {
   'played': false,
   'datePlayed': "",
   'link':
-      "https://www.joblo.com/assets/images/joblo/posters/2020/01/Fast--Furious-9-Han-poster_thumb.jpg",
+      "https://web.archive.org/web/20210420143947if_/https://www.joblo.com/assets/images/joblo/posters/2020/01/Fast--Furious-9-Han-poster_thumb.jpg",
   'flimlink':
       "https://eg.egybest.com/movie/fast-and-furious-presents-hobbs-and-shaw-2019/"
 };
@@ -340,7 +340,7 @@ var earthquake = {
   'played': false,
   'datePlayed': "",
   'link':
-      "https://www.joblo.com/assets/images/joblo/posters/2019/10/earthbirdpostera_thumb.jpg",
+      "https://web.archive.org/web/20210420033218if_/https://www.joblo.com/assets/images/joblo/posters/2019/10/earthbirdpostera_thumb.jpg",
   'flimlink': "https://eg.egybest.com/movie/earthquake-bird-2019/#download"
 };
 var maleficent = {
